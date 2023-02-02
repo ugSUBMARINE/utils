@@ -255,24 +255,13 @@ if __name__ == "__main__":
         "br_hm.png",
         61,
         20,
+        cb_vert=True,
         cm_img_vals=np.arange(0, 5, .5),
         cmap_="inferno",
     )
-    """
-    hm_vals = retriev_values(
-        "test_hm.png",
-        23,
-        18,
-        th=40,
-        cb_vert=True,
-        cm_img_vals=np.arange(0, 24, 1),
-        cmap_="inferno",
-        expand_ = 3
-    )
-    """
 
-    """
     offset = 2
+
     aa_top_bot = list("GAVILMFYWDERHKSTNQCP")
     seq = list("IAQIHILEGRSDEQKETLIREVSEAISRSLDAPLTSVRVIITEMAKGHFGIGGELASKVRR")
     seq_len = len(seq)
@@ -287,4 +276,3 @@ if __name__ == "__main__":
                     nds.write(
                         f"{seq[cj]}{cj + offset}{aa_top_bot[ci]}\t1\t{score}\n"
                     )
-    """
